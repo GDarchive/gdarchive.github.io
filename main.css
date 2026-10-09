@@ -1,0 +1,51 @@
+* { margin: 0; /* Поставити всі границі на 0 */ color: white; font-family: sans-serif; /* Стандартний системний шрифт без засічок */}
+
+main { margin-inline: auto; } /* Центрувати вміст контейнеру */
+main a { text-decoration: none; color: lightskyblue; } /* Прибрати підкреслення з стилю посилання */
+
+
+b { cursor: default; } /* Використовувати стандартний курсор для жирного тексту (оскільки він частина інтерфейсу) */
+
+a:hover { text-decoration: underline; } /* Підкреслювати посилання при наведенні */
+
+h1 {
+  font-size: 16px; /* Чуть-чуть збільшений розмір (щоб виділити) від стандартного 14px для назви категорії */
+  text-align: center; /* Центрувати */
+  margin: 5px 5px; /* Відступи верх низ */
+}
+
+h2 {
+  font-size: 18px; /* Чуть-чуть збільшений розмір (щоб виділити) від 16px h1 для головного заголовка */
+  text-align: center; /* Центрувати */
+  margin: 5px 5px; /* Відступи верх низ */
+}
+
+body { background: linear-gradient(to bottom, #323232, #171717); } /* Фон Gauntlets GD */
+body { display: flex; } /* Відображати все в 1-у рядку */
+
+@media (max-width: 990px) { body { flex-wrap: wrap; justify-content: center; } } /* Переносити навігаційну панель вверх якщо немає місця */
+@media (max-width: 990px) { body { flex-wrap: wrap; justify-content: center; } } /* Переносити навігаційну панель вверх якщо немає місця */
+@media (max-width: 990px) { nav { max-width: 990px; } } /* Розширити навігаційну панель*/
+@media (min-width: 991px) { nav { top: 0; position: sticky; height: 100vh; overflow-y: auto; } } /* Закріпити навігаційну панель */
+@media (min-width: 991px) { nav { min-width: 200px; max-width: 200px; } } /* Оптимальна ширина для навігаційної панелі */
+
+nav {
+  font-size: 14px; /* Оптимальний розмір шрифту для інтерфейсів на 15.6" 1920x1080 екрані з дистанції перегляду 50 см при 100%-у масштабу */
+  box-sizing: border-box; padding: 5px 10px; /* Рамка навігаційної панлі */
+  line-height: 1.6; /* Оптимальний для читання міжрядковий інтервал */
+}
+
+nav a { all: unset; cursor: pointer; } /* Прибрати стиль посилання (використовувати стандартний стиль тексту) і використовувати курсор руку */
+
+section {
+  font-size: 14px; /* Оптимальний розмір шрифту для інтерфейсів на 15.6" 1920x1080 екрані з дистанції перегляду 50 см при 100%-у масштабу */
+  display: flex; flex-wrap: wrap; /* Відображати все в 1-у рядку, якщо не влазить — переносити на наступний */
+  justify-content: center; /* Центрувати вміст контейнеру */
+  gap: 10px; /* Пробіли між елементами */
+}
+
+section figcaption { max-width: 256px } /* Максимальна ширина тексту — ширина прев'ю */
+
+table, th, td { border: 1px solid white; border-collapse: collapse; }
+th, td { background-color: #0e0e0e; padding: 5px 5px; text-align: center; }
+th, td a { text-decoration: none; } /* Прибрати підкреслення з стилю посилання */
