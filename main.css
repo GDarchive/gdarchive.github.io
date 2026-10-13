@@ -39,12 +39,12 @@ nav a { all: unset; cursor: pointer; } /* Прибрати стиль посил
 
 section {
   font-size: 14px; /* Оптимальний розмір шрифту для інтерфейсів на 15.6" 1920x1080 екрані з дистанції перегляду 50 см при 100%-у масштабу */
-  display: flex; flex-wrap: wrap; /* Відображати все в 1-у рядку, якщо не влазить — переносити на наступний */
+  display: flex; flex-wrap: wrap; /* Відображати все в 1-у рядку, якщо не влазить – переносити на наступний */
   justify-content: center; /* Центрувати вміст контейнеру */
   gap: 10px; /* Пробіли між елементами */
 }
 
-section figcaption { max-width: 256px } /* Максимальна ширина тексту — ширина прев'ю */
+section figcaption { max-width: 256px } /* Максимальна ширина тексту – ширина прев'ю */
 
 table, th, td { border: 1px solid white; border-collapse: collapse; }
 th, td { background-color: #0e0e0e; padding: 5px 5px; text-align: center; }
